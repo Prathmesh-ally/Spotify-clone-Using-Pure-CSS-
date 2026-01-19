@@ -1,0 +1,357 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    padding: 1rem;
+}
+.sidebar{
+    background-color:rgb(0, 0, 0) ;
+    width: 350px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+.main-content{
+    flex: 1;
+    background-color: #121212 ;
+    border-radius: 1rem;
+    overflow: auto   ;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-options{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-options:hover{
+    opacity: 1;
+}
+.nav-options i{
+    font-size: 1.25rem;
+}
+.nav-options a{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding : 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-options img{
+    height: 1.25rem ;
+    width: 1.25rem;
+}
+.lib-icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.lib-icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.lib-icons i:hover{
+    opacity: 1;
+}
+.boxes{
+    background-color: #232323 ;
+    height: 8rem ;
+    border-radius: 1rem;
+    margin: 1rem 0 1.75rem 0;
+    padding: 0.5rem 1.25rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #232323;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem;
+    z-index: 1;
+}
+.sticky-nav-icons img{
+    height: 2rem;
+    width: 2rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item {
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color: #121212;
+    color: white;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-image{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.music-player .album-icons{
+    align-items: center;
+    height: 3rem;
+    width: 2rem;
+}
+.para{
+    color: white;
+    font-size: 0.5rem;
+    margin: fit-content;
+    
+}
+/* .album-icons img{
+    height: 60%;
+    width: 2rem;
+    justify-content: center;
+    align-items: center ;
+    margin-right: 1rem;
+} */
+.album-icons{
+    display: flex;
+    width: 25%;
+    /* height: 100%; */
+    justify-content: flex-start;  
+    margin-top: 1rem;
+}
+.pnp{
+    margin-left: 1rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+.David{
+    opacity: 0.75;
+}
+.main-icon{
+    height: 80%;
+    width: 6rem;
+    margin-right: 1rem;
+}
+.control-icons{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 2%;
+    margin-right: 2rem;
+}
+.control-sym{
+    display: flex;
+    align-items: center;
+}
+.control-sym img{
+    height: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 0.85rem; */
+    padding: 0.25rem;
+    opacity: 0.75;
+}
+.control-sym img:hover{
+    color: white;
+    opacity: 1;
+}
+.control-sym .stack {
+    /* margin-bottom: 0.5rem; */
+    opacity: 0.5;
+}
+.control-sym .lappy {
+    /* margin-bottom: 0.5rem; */
+    opacity: 0.5;
+}
+
+/* Specific style for the volume icon so it doesn't get too big */
+.vol-icon {
+    height: 1.5rem !important; /* Forces it to be smaller than the others */
+    width: auto;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+
+/* Hover effects */
+.volume-slider:hover {
+    accent-color: #1db954; /* Brighter green on hover */
+}
+.vol-icon:hover {
+    opacity: 1;
+}
+/* NEW CODE: Container handles the hover trigger */
+.vol-controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Keeps icon in place */
+    /* margin-left: 1rem; */
+}
+
+/* NEW CODE: Slider is hidden (width: 0) by default */
+.volume-slider {
+    /* width: 0;                
+    opacity: 0;          
+    transition: all 1s ease; 
+    accent-color: #1bd760;   
+    height: 4px;
+    cursor: pointer; */
+    position: absolute;
+    bottom: 70px;         /* Pushes the slider UP above the icon */
+    left: 30%;            /* Centers it horizontally */
+    
+    /* This rotates the slider -90 degrees and keeps it centered */
+    transform: translateX(-50%) rotate(-90deg); 
+    transform-origin: center;
+
+    width: 100px;         /* Length of the slider */
+    height: 5px;
+    
+    /* HIDE IT BY DEFAULT */
+    display: none;       
+    
+    /* Styling */
+    accent-color: #1bd760;
+    cursor: pointer;
+    background-color: #232323; /* Adds a dark background if needed */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/* NEW CODE: When you hover over the CONTAINER, show the slider */
+.vol-controls:hover .volume-slider {
+    /* width: 100px;             /* Expand to full width */
+    /* opacity: 1;               Become visible */ 
+    /* margin-left: 0.5rem;      Add space */
+    display: block;
+}
+.player{
+    width: 50%;
+
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.75;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.player-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.15rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+
+}
